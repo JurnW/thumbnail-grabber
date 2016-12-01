@@ -1,0 +1,50 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <script src="scripts/app.js"></script>
+</head>
+<body>
+
+
+<section>
+    <h1>YouTube Thumbnail Grabber</h1>
+    <p>
+        <input type="textfield" name="ytname" id="videoURL" onblur="grabThumbnail();" onpaste="grabURL();" placeholder="Paste your YouTube URL here">
+    </p>
+    
+    <p>Select the image quality and right click the image to save</p>
+    <ul>
+        <li><a onclick="divVisibility('Div1');">Max Resolution (1080p or more)</a></li>
+        <li><a onclick="divVisibility('Div2');">HD Quality (720P)</a></li>
+        <li><a onclick="divVisibility('Div3');">Standard Quality (480p)</a></li>
+        <li><a onclick="divVisibility('Div4');">Low Quality (360p) </a></li>
+    </ul>
+ 
+
+    <div id="Div1" style="display: none;">
+        <h3>Max Resolution (1080P or more)</h3>
+        <img name="maxres" src="">
+        <input type="text" id="urlMax">
+    </div>
+    <div id="Div2" style="display: none;">
+        <h3>HD Quality (720P)</h3>
+        <img name="hd" src="">
+        <input type="text" id="urlHD">
+    </div>
+    <div id="Div3" style="display: none;">
+        <h3>Standard Quality (480p)</h3>
+        <img name="standard" src="">
+        <input type="text" id="urlStandard">
+    </div>
+    <div id="Div4" style="display: none;">
+        <h3>Low Quality (360p)</h3>
+        <img name="low" src="">
+        <input type="text" id="url_low">
+    </div>
+
+
+</section>
+
+</body>
+</html>
+
